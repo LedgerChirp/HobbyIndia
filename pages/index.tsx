@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Card from "./../components/ProductDisplay/Card";
+import AllProducts from "@/components/Products/AllProducts";
+import Sidecard from "@/components/Sidecard/Sidecard";
 
 export default function Home() {
 	return (
@@ -13,6 +15,8 @@ export default function Home() {
 			</Head>
 			<div className="">
 				<Card />
+				<AllProducts />
+				<Sidecard />
 			</div>
 		</>
 	);
