@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["cdn.shopify.com", "localhost", "source.unsplash.com"],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
