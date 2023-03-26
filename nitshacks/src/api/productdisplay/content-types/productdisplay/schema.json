@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productdisplays",
+  "info": {
+    "singularName": "productdisplay",
+    "pluralName": "productdisplays",
+    "displayName": "productdisplay",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "ids": {
+      "type": "biginteger"
+    },
+    "width": {
+      "type": "string"
+    },
+    "card": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_url": {
+      "type": "text"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "textcolor": {
+      "type": "string"
+    }
+  }
+}

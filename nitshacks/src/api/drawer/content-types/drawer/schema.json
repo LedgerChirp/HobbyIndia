@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drawers",
+  "info": {
+    "singularName": "drawer",
+    "pluralName": "drawers",
+    "displayName": "drawer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "links": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string"
+    },
+    "svg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
