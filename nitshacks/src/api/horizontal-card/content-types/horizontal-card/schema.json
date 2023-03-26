@@ -4,7 +4,8 @@
   "info": {
     "singularName": "horizontal-card",
     "pluralName": "horizontal-cards",
-    "displayName": "horizontal_card"
+    "displayName": "horizontal_card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,12 @@
       "type": "text"
     },
     "url": {
+      "type": "string"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "text_color": {
       "type": "string"
     }
   }

@@ -2,8 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function Card({ title, heading, height, width, url, imageurl, elem }: any) {
-  console.log(elem);
+function Card({
+  title,
+  heading,
+  height,
+  width,
+  url,
+  imageurl,
+  elem,
+  bgcolr,
+  textcolr,
+}: any) {
   //   const elem = [
   //     {
   //       id: 1,
@@ -37,12 +46,12 @@ function Card({ title, heading, height, width, url, imageurl, elem }: any) {
   //     },
   //   ];
   return (
-    <div className="flex justify-center items-center w-[90vw] mx-auto border border-gray-700 p-2 rounded-2xl py-4">
+    <div className="flex justify-center items-center w-[90vw] mx-auto border border-gray-700 p-2 rounded-2xl py-4 mt-8">
       <div className="">
         <div className="sm:grid sm:grid-cols-2">
-          <div className="flex flex-col items-center sm:items-start sm:m-auto sm:w-full sm:h-full sm:justify-center text-gray-700 sm:pl-10 ">
+          <div className="flex flex-col items-center sm:items-start sm:m-auto sm:w-full w-[90%] mx-auto text-center sm:h-full sm:justify-center text-gray-700 sm:pl-10 ">
             <p className="font-medium">{title}</p>
-            <h2 className="text-3xl font-bold text-center w-[80%] sm:w-full sm:text-start">
+            <h2 className="sm:text-3xl text-2xl font-bold text-center w-[90%] sm:w-full sm:text-start">
               {heading}
             </h2>
             {/* <Link href={url}> */}
@@ -65,10 +74,12 @@ function Card({ title, heading, height, width, url, imageurl, elem }: any) {
                     src={item.image}
                     alt={item.title}
                     className="rounded-t-2xl"
-                    width={200}
-                    height={200}
+                    width={width}
+                    height={height}
                   />
-                  <p className="text-center bg-[#700165] text-white w-full rounded-b-2xl p-1">
+                  <p
+                    className={`text-center bg-[#${bgcolr}] text-${textcolr} w-full xl:w-[95%]  rounded-b-2xl p-1`}
+                  >
                     {item.title}
                   </p>
                 </div>
@@ -90,7 +101,9 @@ function Card({ title, heading, height, width, url, imageurl, elem }: any) {
                   width={200}
                   height={200}
                 />
-                <p className="text-center bg-[#700165] text-white w-full rounded-b-2xl p-1">
+                <p
+                  className={`text-center bg-[#${bgcolr}] text-${textcolr} w-full xl:w-[95%] rounded-b-2xl p-1`}
+                >
                   {item.title}
                 </p>
               </div>

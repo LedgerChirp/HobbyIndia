@@ -4,7 +4,8 @@
   "info": {
     "singularName": "productdisplay",
     "pluralName": "productdisplays",
-    "displayName": "productdisplay"
+    "displayName": "productdisplay",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -33,17 +34,24 @@
       "type": "json"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "image_url": {
       "type": "text"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "textcolor": {
+      "type": "string"
     }
   }
 }
