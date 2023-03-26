@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horizontal_cards",
+  "info": {
+    "singularName": "horizontal-card",
+    "pluralName": "horizontal-cards",
+    "displayName": "horizontal_card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
